@@ -1,0 +1,12 @@
+#!/bin/bash
+
+for filename in `find *.txt`
+do
+   if [ `echo $filename | sed 's/^tom_//'` = $filename ]
+   then
+       mv $filename tom_$filename 
+   fi
+done 
+
+
+
