@@ -1,0 +1,11 @@
+#include <stdio.h>
+#define N 6
+main()
+{   char c[N];
+    int i=0;
+
+    for(i=0;i<N;i++) c[i]=getchar();
+    for(i=0;i<N;i++) putchar(c[i]);
+
+    getch();
+}
